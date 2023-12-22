@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Ulta Beauty Customer Feedback </h1>
+      <p id="description">Please provide feedback on your most recent Ulta customer experience.</p>
+      <hr width=100% size=3 color=#E90B5A> 
+      <form id="survey-form" method="post">
+        
+        <fieldset>
+          <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Jane Doe" required /></label>
+
+          <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="123@gmail.com" required/></label>
+
+          <label id="number-label" for="number">Order number: <input id="number" name="number" type="number" min = "100000" max="999999" placeholder="123456789"/></label>
+      </fieldset>
+
+      <fieldset>
+        <p>How satisfied were you with your Ulta Beauty shopping experience?</p>
+          <label for="dropdown"><select id="dropdown" name="dropdown">
+              <option value = "">Select one</option>
+              <option value = "1">Highly satisfied</option>  
+              <option value = "2">Somewhat satisfied</option>  
+              <option value = "3">Neutral</option>  
+              <option value = "4">Somewhat unsatisfied</option>  
+              <option value = "5">Highly unsatisfied</option>  
+            </select></label>
+
+        </fieldset>
+
+        <fieldset>
+          <p>Would you like to opt in for emails? (required)</p>
+        <label for="all-emails">
+          <input id="all-emails" type="radio" name="email-pref" class="inline" Value = "1" checked />
+           Yes, all emails</label>
+        <label for="necessary-emails">
+          <input id="necessary-emails" type="radio" name="email-pref" class="inline" Value = "2"/> Only necessary emails</label>
+        <label for="no-emails"><input id="no-emails" type="radio" name="email-pref" class="inline" Value = "3"/> No</label>
+        </fieldset>
+        <fieldset>
+          <p>Which representative(s) did you speak to today?</p>
+          <label for="Sadie">
+            <input class="inline" type="checkbox" id="Sadie" value="Sadie"/> Sadie
+          </label>
+          <label>
+            <input class="inline" type="checkbox" id="Lorezno" value="Lorenzo" /> Lorenzo
+          </label>
+          <label>
+            <input class="inline" type="checkbox" id="Kim" value="Kim" /> Kim
+          </label>
+          <label>
+            <input class="inline"  type="checkbox" id="Debbie" value="Debbie"/> Debbie
+          </label>
+
+          </fieldset>
+        <fieldset>
+
+          <label for="additional">Please provide any additional feedback:
+          <textarea id="additional" name="additional" rows="3" cols="30" placeholder="During my most recent shopping trip at Ulta..."></textarea>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label for="submit">
+            <input type="submit" value="Submit" id="submit">
+          </label>
+        </fieldset>
+      </form>
+  </body>
+</html>
